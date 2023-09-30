@@ -1,0 +1,52 @@
+.topnav a:hover{
+    text-decoration-line: underline;
+    color: #FFE5B6;
+}
+
+.texto-home{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.titulo-portfolio{
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+}
+
+.tamanho-slide-port{
+    height: 350px;
+    width: 700px;
+}
+
+/* Estilo para o botão "Voltar ao Topo" */
+#voltar-ao-topo {
+    display: none; /* Inicialmente, o botão fica oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #473C38; /* Cor de fundo do botão */
+    color: #FFE5B6; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 360px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+.imagem-animada {
+    position: relative;
+    animation: slideFromLeft 2s ease-in-out; /* Tempo e efeito de animação */
+}
+
+@keyframes slideFromLeft {
+    0% {
+        left: -100%; /* Começa fora da tela à esquerda */
+    }
+    100% {
+        left: 0; /* Termina na posição inicial */
+    }
+}
+
